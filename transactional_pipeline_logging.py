@@ -42,7 +42,7 @@ def ingest_data(**context):
 
     spark = create_spark_session()
     
-    # Find all CSV files in landing folder (or you can target a single file if needed)
+    # Find all CSV files in landing folder (or can target a single file if needed)
     csv_files = glob.glob(f"{file_path}/*.csv")
     
     if not csv_files:
@@ -319,4 +319,4 @@ with DAG(
 
     wait_for_csv >> start_pipeline >> ingest_task >> validate_schema_task >> deduplication_task >> data_quality_task >> incremental_load_task >> log_metrics_task >> audit_log_task
     
-    # DAGBAG/UPDATERELATIVE ERROR IN AIRFLOW -- ASSIGNED FUNCTION AS A DOWNSTREAM TASK
+    # DAGBAG/UPDATERELATIVE ERROR IN AIRFLOW -- ASSIGNED FUNCTION AS A DOWNSTREAM TASK (fixed this )
