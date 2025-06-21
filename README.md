@@ -31,21 +31,22 @@ This is a part of my hands-on learning in building scalable and fault-tolerant d
 
 ## 📂 Directory Structure
 
+
+```text
 airflow/
 │
 ├── dags/
-│ └── transaction_pipeline.py # Main DAG file
+│   └── transaction_pipeline.py         # Main DAG file
 │
 ├── data/
-│ ├── landing/ # Incoming .csv files
-│ ├── raw/ # Archived raw .csv files
-│ ├── processed/ # Ingested data in Parquet
-│ ├── deduplicated/ # Deduplicated data
-│ ├── cleaned/ # Final output with partitioned data
-│ └── invalids/ # Invalid records (nulls, negatives, schema issues)
+│   ├── landing/                        # Incoming .csv files
+│   ├── raw/                            # Archived raw .csv files
+│   ├── processed/                      # Ingested data in Parquet
+│   ├── deduplicated/                   # Deduplicated data
+│   ├── cleaned/                        # Final output with partitioned data
+│   └── invalids/                       # Invalid records (nulls, negatives, schema issues)
 
-
-
+```
 
 ## 🔁 Workflow Steps
 
