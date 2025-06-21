@@ -83,17 +83,20 @@ airflow/
 ###  Install Dependencies
 
 pip install apache-airflow
+
 pip install pyspark
 
 
 ### Optionally set up a virtual environment:
 
 python -m venv venv
+
 source venv/bin/activate
 
 ###  Start Airflow Services
 
 airflow scheduler
+
 airflow webserver
    
 - Access the Airflow UI at http://localhost:8080
