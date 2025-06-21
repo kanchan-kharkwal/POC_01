@@ -85,36 +85,38 @@ airflow/
 
 ###  Install Dependencies
 
-pip install apache-airflow
-pip install pyspark
+   pip install apache-airflow
+   pip install pyspark
 
 
 ### Optionally set up a virtual environment:
 
-python -m venv venv
-source venv/bin/activate
+   python -m venv venv
+   source venv/bin/activate
 
 ###  Start Airflow Services
 
-airflow scheduler
-airflow webserver
-
-Access the Airflow UI at http://localhost:8080
+   airflow scheduler
+   airflow webserver
+   
+   Access the Airflow UI at http://localhost:8080
 
 
 ### Trigger the DAG
 
-Place one or more .csv files inside data/landing/.
-Trigger the DAG transaction_pipeline manually from the UI or wait for the scheduler to pick it.
-Files are automatically processed and moved to appropriate directories.
+   Place one or more .csv files inside data/landing/.
+   Trigger the DAG transaction_pipeline manually from the UI or wait for the scheduler to pick it.
+   Files are automatically processed and moved to appropriate directories.
 
 
 ### Sample Output Metrics
-Valid Records:  980
-Null Records:  10
-Negative Amounts:  5
-Outdated Records (older than 2 years):  7
-Final Cleaned Records:  958
+
+- Valid Records:  980
+- Null Records:  10
+- Negative Amounts:  5
+- Outdated Records (older than 2 years):  7
+- Final Cleaned Records:  958
+
 
 
 ##  Key Learnings
@@ -131,4 +133,4 @@ If you'd like to discuss this project or similar use cases, feel free to connect
 
 **Kanchan Kharkwal**  
 [LinkedIn](https://www.linkedin.com/in/kanchan-kharkwal)  
- Email: [Gmail](kharkwal.kanchan31@gmail.com)
+ Email: kharkwal.kanchan31@gmail.com
