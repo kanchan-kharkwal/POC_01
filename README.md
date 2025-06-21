@@ -1,6 +1,6 @@
 # Transactional Data Pipeline Orchestration
 
-This project is a **modular, production-ready data pipeline** built using **Apache Airflow** and **Apache PySpark**, designed to simulate real-time transaction data processing. It performs a full ETL flow—starting from ingesting `.csv` files to partitioned and cleaned parquet files, ensuring schema validation, deduplication, and data quality checks along the way.
+This project is a **modular,  data pipeline** built using **Apache Airflow** and **Apache PySpark**, designed to simulate real-time transaction data processing. It performs a full ETL flow—starting from ingesting `.csv` files to partitioned and cleaned parquet files, ensuring schema validation, deduplication, and data quality checks along the way.
 
 ---
 
