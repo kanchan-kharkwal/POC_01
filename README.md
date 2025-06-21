@@ -1,8 +1,5 @@
 # Transactional Data Pipeline Orchestration
 
-
-
-
 This project is a **modular, production-ready data pipeline** built using **Apache Airflow** and **Apache PySpark**, designed to simulate real-time transaction data processing. It performs a full ETL flow—starting from ingesting `.csv` files to partitioned and cleaned parquet files, ensuring schema validation, deduplication, and data quality checks along the way.
 
 ---
@@ -85,28 +82,28 @@ airflow/
 
 ###  Install Dependencies
 
-   pip install apache-airflow
-   pip install pyspark
+pip install apache-airflow
+pip install pyspark
 
 
 ### Optionally set up a virtual environment:
 
-   python -m venv venv
-   source venv/bin/activate
+python -m venv venv
+source venv/bin/activate
 
 ###  Start Airflow Services
 
-   airflow scheduler
-   airflow webserver
+airflow scheduler
+airflow webserver
    
-   Access the Airflow UI at http://localhost:8080
+- Access the Airflow UI at http://localhost:8080
 
 
 ### Trigger the DAG
 
-   Place one or more .csv files inside data/landing/.
-   Trigger the DAG transaction_pipeline manually from the UI or wait for the scheduler to pick it.
-   Files are automatically processed and moved to appropriate directories.
+ -  Place one or more .csv files inside data/landing/.
+ -  Trigger the DAG transaction_pipeline manually from the UI or wait for the scheduler to pick it.
+ -   Files are automatically processed and moved to appropriate directories.
 
 
 ### Sample Output Metrics
@@ -117,7 +114,7 @@ airflow/
 - Outdated Records (older than 2 years):  7
 - Final Cleaned Records:  958
 
-
+---
 
 ##  Key Learnings
 
@@ -126,6 +123,7 @@ airflow/
 -  Error handling using **Airflow XComs** and logging
 -  Real-world ingestion and **data quality validation workflows**
 
+---
 
 ## 📬 Contact
 
